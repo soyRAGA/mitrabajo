@@ -1,0 +1,427 @@
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*HEADER*/
+header{
+    height: 100px;
+    background:#4D4D5C;
+    padding: 0 50px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-transform: uppercase;
+    color:#6cc091;
+    font-weight: 200;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu,
+.esconder-menu{
+    color: #6cc091;
+}
+
+/*BANNER*/
+
+#check{
+    display: none;
+}
+#banner{
+    padding: 0 50px;
+    background-image: url(IMG/petshop.png);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+}
+#banner::before{
+    content: '';
+    background: rgb(77, 77, 93, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color:#fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+
+}.contenido-banner h3 span{
+    font-weight: 600;
+}
+.boton-empezar{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc091;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+.boton-empezar:hover{
+    background:#6cc09070 ;
+}
+#Productos{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#Productos img{
+    border-radius:100%;
+}
+#Productos div{
+    padding: 30px 30px;
+}
+#Productos div h4{
+    color: #4D4D5C;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+#Productos div p{
+   color: #4d4d5c87;
+   font-size: 18px;
+}
+.boton-mas-productos{
+    display: inline-block;
+    text-decoration: none;
+    color: #6cc091;
+    padding: 10px 30px;
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: 0.4s;
+}
+.boton-mas-productos:hover{
+    background: #6cc091;
+    color: #fff;
+}
+
+/*FORMULARIO*/
+#contacto{
+    background: #6cc091;
+    padding: 50px 0px;
+    color: #fff;
+}
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.datos-form{
+    display: flex;
+}
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+form input,
+form textarea{
+    background: #6cc091;
+    border-radius: 10px;
+    border: 2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+}
+form input:focus,
+form textarea:focus{
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.boton-formulario .boton-mas-productos{
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+}
+.boton-formulario .boton-mas-productos:hover{
+    background: #4fa776ad;
+}
+/*ICONOS*/
+#iconos{
+    padding: 0px 50px;
+    background: rgb(77, 77, 93, 0.6);
+}
+.contenido-iconos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido-iconos div{
+    flex: 1;
+    margin:20px 0px;
+    border-right: 2px solid rgb(255, 255, 255, 0.2);
+}
+#iconos-mobile{
+    border:none ;
+}
+.contenido-iconos div i{
+    color: #6cc091;
+}
+.contenido-iconos div h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+.contenido-iconos p{
+    color: rgb(255, 255, 255, 0.2);
+    font-size: 15px;
+}
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.bx-package{
+    font-size: 70px;
+}
+.bx-check{
+    font-size: 70px;
+}
+.bx-message-dots{
+    font-size: 70px;
+}
+
+/*FOOTER*/
+footer{
+    background: #4D4D5C;
+    color: #4bae77;
+    text-align: center;
+    padding: 10px;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50PX;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #4bae77;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #4bae77;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #6cc091;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #04391c;
+}
+.pie-pagina .grupo-2{
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 15px 10px;
+    text-align: center;
+    color: #4bae77;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 20px;
+}
+/*RESPONSIVE TABLETS*/
+@media(max-width:825px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4D4D5C;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    /*formulario*/
+    .datos-form{
+        flex-direction: column;
+    }
+    /*BANNER*/
+    #Productos{
+        flex-direction: column;
+    }
+    /*ICONOS*/
+    .contenido-iconos{
+        flex-direction: column;
+    }
+    .contenido-iconos div{
+        border: none;
+    }
+    /*GALERIA DE IMAGENES*/
+    .galeria{
+        flex-direction: column;
+    }
+
+    /*FOOTER*/
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30PX;
+        padding: 35px 0px;
+    }
+    /*GALERIA DE IMAGENES-PRODUCTOS*/
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagenes{
+        width: 48%;
+    }
+   }
+
+
+.imagen{
+    width: 270px;
+}
+.achicar{
+    width: 320px;
+}
+/*GALERIA DE IMAGANES - PRODUCTOS*/
+.galeria{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.galeria h1{
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+}
+.linea{
+    border-top: 5px solid #4D4D5C;
+    margin-bottom: 40px;
+}
+.contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+.contenedor-imagenes .imagenes{
+    width: 32%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(255, 255, 255, 0.2);
+}
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(77, 77, 93, 0.6);
+    width: 100%;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+.overlay h2{
+    color: #fff;
+   font-weight: 400;
+   font-size: 25px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   transform: translate(-50%, -10%);
+
+}
+.imagenes:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
